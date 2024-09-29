@@ -25,6 +25,9 @@ export default function Login() {
       <button onClick={() => signIn("google")} style={buttonStyle}>
         Entrar com Google
       </button>
+      <button onClick={() => signIn("github")} style={buttonStyle}>
+        Entrar com GitHub
+      </button>
       <button onClick={() => signIn("email")} style={buttonStyle}>
         Entrar com E-mail
       </button>
