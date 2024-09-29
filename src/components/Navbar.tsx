@@ -1,10 +1,10 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
 
   return (
     <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
